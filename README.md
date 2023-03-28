@@ -53,7 +53,13 @@ Or simply install from the requirements.txt file:
 $ pip install -r requirements.txt
 ```
 
-Running the page generator
+## Folders
+
+- Backend folder contains the python generator script (create-html) and the template files.
+- Frontend folder. This is where the generated pages end up. There is also a css and page assets here.
+- the html-pages is just where the html pages we develop can go. Before we configure them in the generator.
+
+## Running the page generator
 
 The page generator uses Jinja:
 
