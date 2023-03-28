@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css?v=1" />
+    <title>Solar Protocol</title>
+    <meta
+      name="author"
+      content=" Tega Brain, Alex Nathanson and Benedetta Piantella."
+    />
+
+    <!--Twitter -->
+    <!--sola this is what Facebook and other social websites will draw on -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Solar Protocol" />
+    <meta
+      name="twitter:description"
+      content="A naturally intelligent network programmed by the sun."
+    />
+    <meta name="twitter:image" content="images/full-images/logo.gif" />
+
+    <!-- Open Graph / Facebook -->
+    <!--sola this is what Facebook and other social websites will draw on -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://solarprotocol.net/" />
+    <meta property="og:title" content="Solar Protocol" />
+    <meta
+      property="og:description"
+      content="A naturally intelligent network programmed by the sun."
+    />
+    <meta property="og:image" content="images/full-images/logo.gif" />
+
+    <link rel="icon" href="images/favicon.png" />
+    <style>
+
+                a:hover { color: {{bgColor}};  text-decoration: none;}
+
+
+
+      }
+      <style>
+            a:hover {
+              color: Olive;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- LEFT NAV --------------------------------->
+
+      <header
+        style="
+          background-image: linear-gradient(
+            to top,
+            Olive,
+            Olive,
+            rgb(100, 100, 100),
+            black,
+            black
+          );
+          color: white;
+        "
+      >
+        <div class="mobile" style="background-color: black">
+          <span class="h1"><a href="index.html">Solar Protocol</a></span>
+        </div>
+        <div class="sub-heading">
+          <span class="h1"><a href="index.html">Solar Protocol</a></span>
+          <span class="h5">ACTIVE SERVER:</span>
+          <span class="p">
+            <i></i>
+            Pizza Rat •
+            <i></i>
+            Coney Island •
+            <i></i>
+            Battery 59%
+          </span>
+        </div>
+      </header>
+
+      <!-- RIGHT NAV --------------------------------->
+      <nav>
+        <ul class="no-bullets">
+          <li>
+            <a href="index.html">Home</a>
+            •
+          </li>
+          <li>
+            <a href="network.html">Network</a>
+            •
+          </li>
+          <li>
+            <a href="manifesto.html">Manifesto</a>
+            •
+          </li>
+          <li>
+            <a href="documentation.html">Tech</a>
+            •
+          </li>
+          <li><a href="library.html">Library</a></li>
+        </ul>
+      </nav>
+      {% block content %}{% endblock %}
+    </div>
+    <!-- end of container -->
+  </body>
+</html>

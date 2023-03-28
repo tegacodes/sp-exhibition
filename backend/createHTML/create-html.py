@@ -46,26 +46,7 @@ serverNames = []
 myIP = " "
 days = 3
 
-with open(path+'/createHTML/deadIPs.txt', 'r') as infile:
-    deadIPs = infile.readlines()
-    deadIPs = [d.strip() for d in deadIPs]
 
-#Call API for every IP address and get charge controller data 
-def getCC(dst,ccValue):
-    print("GET from " + dst)
-    try:
-        x = requests.get('http://' + dst + "/api/v1/chargecontroller.php?value="+ccValue + "&duration="+str(days),timeout=5)
-        #print("API charge controller data:")
-        #print(x.text)
-        return json.loads(x.text)
-    except requests.exceptions.HTTPError as errh:
-        print("An Http Error occurred:" + repr(errh))
-    except requests.exceptions.ConnectionError as errc:
-        print("An Error Connecting to the API occurred:" + repr(errc))
-    except requests.exceptions.Timeout as errt:
-        print("A Timeout Error occurred:" + repr(errt))
-    except requests.exceptions.RequestException as err:
-        print("An Unknown Error occurred" + repr(err))
 
 #gets power data from charge controller
 def read_csv(): 
@@ -97,32 +78,17 @@ def read_csv():
         print("Error reading charge controller data from csv.") 
 
 
-
-def render_pages(_local_data, _data, _weather, _server_data):
+def render_pages(_local_data, _data, _weather,):
     try:
         print("Battery Percentage:" + str(_data["battery percentage"]))
     except:
         print("No energy data received.")
 
     pages = [
-        ("index_template.html", "index.html"),
-        ("network_template.html", "network.html"),
-        ("call_template.html", "call.html"),
-        ("documentation_template.html", "documentation.html"),
-        ("solar-web_template.html", "solar-web.html"),
-        ("manifesto_template.html", "manifesto.html"),
-        ("library_template.html", "library.html"),
-        ("guides_template.html", "guides.html"),
-          ("guide_projects_template.html", "guide-projects.html"),
-         ("guide_site_template.html", "guide-site.html"),
-          ("guide_api1_template.html", "guide-api1.html"),
-           ("guide_api2_template.html", "guide-api2.html"),
-           ("guide_creatingsite_template.html", "guide-creatingasite.html"),
-           ("guide_howitworks_template.html", "guide-howitworks.html"),
-           ("guide_portforward_template.html", "guide-portforward.html"),
-           ("guide_troubleshooting_template.html", "guide-troubleshooting.html"),
+        ("index-template.html", "index.html"),
+         ("essay1-template.html", "pasek.html"),
                ]
-
+    
     #get the current time
     time = datetime.datetime.now()
     time = time.strftime("%I:%M %p")
@@ -202,7 +168,7 @@ def render_pages(_local_data, _data, _weather, _server_data):
                 zone=zone,
                 leadImage=leadImage,
                 mode=mode, 
-                servers=_server_data
+
             )
         except:
             rendered_html = template.render(
@@ -235,7 +201,7 @@ def render_pages(_local_data, _data, _weather, _server_data):
                 zone=zone,
                 leadImage=leadImage,
                 mode=mode, 
-                servers=_server_data
+
             )
 
         # print(rendered_html)
@@ -438,75 +404,8 @@ def main():
             "sunset": "n/a"
         }
 
-    #1. get IP list of addresses
-    deviceList_data = get_ips()
-    #creates deviceList_data
-    print("#1")
-    print(deviceList_data)
-    print(deviceList_data.items())
-  
-    #2 Collect data from all the difference servers on the network
-    server_data = []
 
-    for key, value in deviceList_data.items():
-        try:
-            # item["ip"] = value #add IPs to server data
-            sInfo = json.loads(getAPIData('chargecontroller.php?systemInfo=dump',value))
-            # the above returns a dictionary containing all of the above system info
-            # as documented here: http://solarprotocol.net/api/v1/
-            # pvVoltage is a constant that is rated for the module.
-            sInfo['ip'] = value
-            # print("#2")
-            # print(sInfo)
-            # print(type(sInfo))
-            server_data.append(sInfo)
-
-        except Exception as e:
-            print(e)
-            #reformat page so offline servers dont actually need this blank data?
-            server_data.append({'ip':value,'name':key, 'description':'', 'city':'', 'location':'','country':''})
-
-    #3. get solar data and add it to server_data
-    item_count = 0
-    for item in server_data:
-        try:
-            solar_data = get_pv_value(item["ip"]) 
-            #the above calls the api again. This returns the live PV voltage.
-            status = "online"
-        except Exception as e:
-            solar_data = None
-            status = "offline"
-        item["solar_voltage"] = solar_data
-        item["status"] = status
-        try: 
-            time_stamp = getDeviceInfo('time stamp')
-            print("time_stamp!!!!!!!!!!!!!!!!!!!!", time_stamp[item_count])
-         
-            ftime_stamp = datetime.datetime.fromtimestamp(float(time_stamp[item_count])).strftime("%m/%d/%Y %H:%M:%S")
-            print(ftime_stamp)
-
-            #time_stamp = ":".join(time_stamp.split(":")[0:-1])
-        except Exception as e:
-            ftime_stamp = "N/A"
-        item["time_stamp"] = ftime_stamp
-
-        #make lower case, remove spaces, remove nonstandard characters 
-        serverURL = 'http://solarprotocol.net/network/' + re.sub('[^A-Za-z0-9-_]+', '', item["name"].lower().replace(" ",""))
-        if status == "online":
-            item["link"] =  "<a href='" + serverURL + "'>" + serverURL +"</a>"
-        else:
-            item["link"] = serverURL
-        item_count += 1
-
-
-    #4. get images and 
-    print("SERVER DATA!")
-    print(server_data)
-    check_images(server_data)
-    
-
-
-    render_pages(local_data, energy_data, local_weather, server_data)
+    render_pages(local_data, energy_data, local_weather)
 
 
 if __name__ == "__main__":
