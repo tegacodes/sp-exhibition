@@ -53,8 +53,21 @@ Or simply install from the requirements.txt file:
 $ pip install -r requirements.txt
 ```
 
-To run the page generator in development mode, so the script reads the demo data from the demo-data folder. cd into the createHTML folder and run:
+Running the page generator
+
+The page generator uses Jinja:
+
+https://palletsprojects.com/p/jinja/
+
+To run the page generator in development mode (ie. not on a pi) we want the script to read the demo data from the demo-data folder.
+cd into the createHTML folder and run the python script with the DEV parameter.
 
 ```
 python create_html.py DEV
 ```
+
+This script will produce pages from page templates stored in the template folder.
+It takes the base template code and combines with the html in each of the template files.
+See this in line 88 and 89.
+
+To add new pages, make new template files, and then add lines to this array in the create-html file to generate the pages.
