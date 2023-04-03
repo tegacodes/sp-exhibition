@@ -2,10 +2,24 @@
 
 <main>
   <section>
-    <div class="left-content">
-      <h2>Thinking With The Sun</h2>
-      <div class="col-text">
+    <!-- NOTE: I REPLACED LEFT-CONTENT AND RIGHT-CONTENT WITH INFO AND IMAGE, RESPECTIVELY -->
+    <!-- sections change left/right orientation with the 'swap' class, which is applied to the 'section' element -->
+    <div class="info">
+      <div class="header-type-container">
+ __                    ___             
+/  \ |\ | |    | |\ | |__              
+\__/ | \| |___ | | \| |___             
+ ___             __    ___    __       
+|__  \_/ |__| | |__) |  |  | /  \ |\ | 
+|___ / \ |  | | |__) |  |  | \__/ | \| 
+      </div>
+      <div class="col-text-intro">
         <p>
+          <p class="eyebrow">themes</p>
+          <a href="">Qualities of Solar</a>, <a href="">Materiality</a>, <a href="">Limits</a>, <a href="">DIY Networks</a>
+        </p>
+        <p>
+          <p class="eyebrow">curatorial statement</p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis
           vel nunc tempor ultrices. Duis eget ex quis nulla dapibus ultricies.
           Praesent aliquam varius magna et convallis. Suspendisse maximus ex sit
@@ -50,25 +64,36 @@
           Cras porttitor magna nunc. Nullam non lobortis augue. Praesent sed est
           lacus.
         </p>
+        <p>
+          In ac rhoncus purus, non pretium nunc. Morbi id diam urna. Etiam
+          rutrum non ante eu tristique. Ut sed nisi et sem luctus blandit in ut
+          tellus. Nulla a quam ultrices libero maximus maximus in at eros. Donec
+          cursus felis quis suscipit ullamcorper. Sed vitae venenatis metus.
+          Cras porttitor magna nunc. Nullam non lobortis augue. Praesent sed est
+          lacus.
+        </p>
       </div>
     </div>
 
-    <div class="right-content">
-      <img src="images/test.png" />
+    <div class="image">
+      <!-- <img src="images/test.png" /> -->
+      <div class="top-image-container">
+        <img src="images/test.png"">
+      </div>
     </div>
   </section>
 
   <!-- SECTION 2 ------------------------ -->
-  <section>
-    <div class="left-content">
+  <section class="swap">
+    <div class="info info-body">
       <h2>FirstName LastName</h2>
-      <div class="col-text">
+      <div class="col-text-body">
         <h3>Title of the Work</h3>
-        <span class="themes">
+        <div class="themes">
           <a href="">Qualities of Solar</a>
           /
           <a href="">Intelligence</a>
-        </span>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis
           vel nunc tempor ultrices. Duis eget ex quis nulla dapibus ultricies.
@@ -80,21 +105,29 @@
         </p>
       </div>
     </div>
-    <div class="right-content project2"></div>
+    <div class="image project2">
+      <a href="" class="enter-link">
+        <div class="enter-button">
+        ENTER
+        </div>
+      </a>
+      <div class="top-image-container">
+        <img src="images/test.png"">
+      </div>
+    </div>
   </section>
   <!-- SECTION 3 ------------------------ -->
 
   <section>
-    <div class="left-content project3"></div>
-    <div class="right-content">
+    <div class="info info-body">
       <h2>FirstName LastName</h2>
-      <div class="col-text">
+      <div class="col-text-body">
         <h3>Title of the Work</h3>
-        <span class="themes">
+        <div class="themes">
           <a href="">Qualities of Solar</a>
           /
           <a href="">Intelligence</a>
-        </span>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis
           vel nunc tempor ultrices. Duis eget ex quis nulla dapibus ultricies.
@@ -104,6 +137,16 @@
           erat neque, ullamcorper vitae interdum a, dictum id massa. Vestibulum
           dignissim justo non est facilisis cursus.
         </p>
+      </div>
+    </div>
+    <div class="image">
+      <a href="" class="enter-link">
+        <div class="enter-button">
+        ENTER
+        </div>
+      </a>
+      <div class="top-image-container">
+        <img src="images/test.png"">
       </div>
     </div>
   </section>
