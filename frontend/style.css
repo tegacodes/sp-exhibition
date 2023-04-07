@@ -233,13 +233,21 @@ section {
   width: 100%;
   height: 100%;
   max-height: 100vh;
-  background: yellow;
+  /* background: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.image .top-image-container img, .image .image-container img{
+.image .top-image-container svg, .image .image-container img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  background-attachment: fixed;
+}
+
+.image .top-image-container svg{
+  padding: 5% 5% 5% 0;
 }
 
 .image .image-container{
@@ -295,7 +303,6 @@ a .enter-button:hover{
   width: 100%;
   height: 100vh;
   /* height: 0px; */
-  margin-bottom: 100vh;
   background: transparent;
   
   z-index: -2;
