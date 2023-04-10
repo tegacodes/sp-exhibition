@@ -193,21 +193,25 @@ section {
   font-weight: bold;
 }
 
+.mobile-header{
+  display: none;
+}
+
 .body-type-container{
   font-family: Monospace;
   white-space: pre;
-  font-size: 14px;
+  font-size: .9rem;
 }
 
 .col-text-intro {
   margin-top: 46vh;
   line-height: var(--line-height);
-  font-size: 16px;
+  font-size: 1rem;
   /* margin: 0px 20px 0px 0px; */
 }
 
 .col-text-body {
-  font-size: 16px;
+  font-size: 1rem;
   /* margin: 0px 20px 0px 0px; */
 }
 
@@ -463,6 +467,84 @@ ol {
     width: 100%;
   }
 
+  section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .info, .image{
+    width: 100%;
+  }
+
+  .image{
+    height: 70vh;
+  }
+
+  .header-type-container{
+    display: none;
+  }
+
+  .mobile-header{
+    display: block;
+    padding: 40px;
+    font-family: Monospace;
+    white-space: pre;
+    font-size: 16px;
+    font-weight: bold;
+    background: olive;
+  }
+
+  .desktop-header{
+    display: none;
+  }
+
+  .image .top-image-container svg{
+    padding: 0;
+    width:auto;
+    max-width: 100%;
+  }
+
+  .col-text-intro {
+    margin-top: 0px;
+    /* margin: 0px 20px 0px 0px; */
+  }
+
+  .swap{
+   flex-direction: column-reverse;
+  }
+
+  .enter-link{
+    z-index: 100;
+    display: block;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(0,0);
+    width: 100%;
+  }
+  
+  a .enter-button{
+    display: flex;
+    background: olive;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+    padding: 10px 10px 10px 40px;
+  }
+  
+  a .enter-button:hover{
+    transition-duration: 500ms;
+    background: white;
+  }
+
+  .project-text{
+    display: none;
+  }
+
   header {
     width: 100%;
     font-size: 3em;
@@ -486,10 +568,6 @@ ol {
 
   .container {
     flex-direction: column;
-  }
-
-  section {
-    display: block;
   }
 
   .left-content {
