@@ -112,9 +112,12 @@ nav p {
 }
 
 ul.no-bullets {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
   padding-left: 0.05em;
   text-align: start;
   flex: 1 0 40%;
@@ -123,6 +126,7 @@ ul.no-bullets {
 nav a {
   color: var(--textcolor);
 }
+
 nav a:hover {
   text-decoration: none;
 }
@@ -154,7 +158,7 @@ section {
   z-index: 1;
 }
 
-.swap{
+.swap {
   flex-direction: row-reverse;
 }
 
@@ -174,7 +178,7 @@ section {
   position: relative;
 }
 
-.info-body{
+.info-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -185,7 +189,7 @@ section {
   font-size: calc(var(--text-size) * 2);
 }
 
-.header-type-container{
+.header-type-container {
   position: absolute;
   font-family: Monospace;
   white-space: pre;
@@ -193,17 +197,17 @@ section {
   font-weight: bold;
 }
 
-.mobile-header{
+.mobile-header {
   display: none;
 }
 
-.body-type-container{
+.body-type-container {
   font-family: Monospace;
   white-space: pre;
   font-size: .9rem;
 }
 
-.article-type-container{
+.article-type-container {
   font-family: Monospace;
   white-space: pre;
   font-size: .9rem;
@@ -228,9 +232,9 @@ section {
   position: relative;
 }
 
-.image .top-image-container{
+.image .top-image-container {
   position: sticky;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
   max-height: 100vh;
@@ -240,29 +244,30 @@ section {
   justify-content: space-around;
 }
 
-.image .top-image-container svg, .image .image-container img{
+.image .top-image-container svg,
+.image .image-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   background-attachment: fixed;
 }
 
-.image .top-image-container svg{
+.image .top-image-container svg {
   padding: 5% 5% 5% 0;
 }
 
-.image .image-container{
+.image .image-container {
   width: 100%;
   height: 100%;
   max-height: 100vh;
-  background: yellow; 
+  background: yellow;
   mix-blend-mode: screen;
-  
+
 }
 
-.image .article-image-container{
+.image .article-image-container {
   position: sticky;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
   max-height: 100vh;
@@ -273,20 +278,20 @@ section {
   /* object-fit: cover; */
 }
 
-.image .article-image-container img{
+.image .article-image-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   /* background-attachment: fixed; */
 }
 
-.footer-image-container svg{
+.footer-image-container svg {
   max-height: 100vh;
   max-width: 100%;
   /* height: 110vh;   */
 }
 
-.footer-image-container{
+.footer-image-container {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -294,7 +299,7 @@ section {
   justify-content: center;
 }
 
-.enter-link{
+.enter-link {
   z-index: 100;
   display: block;
   position: absolute;
@@ -304,7 +309,7 @@ section {
 
 }
 
-a .enter-button{
+a .enter-button {
   display: flex;
   background: olive;
   border-radius: 100%;
@@ -315,44 +320,44 @@ a .enter-button{
   z-index: 100;
 }
 
-a .enter-button:hover{
+a .enter-button:hover {
   transition-duration: 500ms;
   background: white;
 }
 
-.footer-spacer{
+.footer-spacer {
   width: 100%;
   height: 100vh;
   /* height: 0px; */
   background: transparent;
-  
+
   z-index: -2;
   pointer-events: none;
 }
 
-.article-home-button{
+.article-home-button {
   display: block;
   text-transform: uppercase;
   margin-bottom: 10vh;
 }
 
-.footer{
+.footer {
   background: olive;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   z-index: -1;
 }
 
-.footer img{
+.footer img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-text a{
+text a {
   cursor: pointer;
 }
 
@@ -368,7 +373,8 @@ text a{
   font-size: calc(var(--text-size) * 0.8);
 }
 
-.col-text-body h3, .themes{
+.col-text-body h3,
+.themes {
   margin-bottom: 30px;
 }
 
@@ -395,7 +401,7 @@ a:hover {
   font-weight: bold;
 }
 
-.eyebrow{
+.eyebrow {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -412,8 +418,8 @@ h6 {
   font-weight: normal;
 }
 
-h1 {
-}
+h1 {}
+
 h1 a {
   color: white;
 }
@@ -467,10 +473,12 @@ ol {
   background-image: url("images/test.png");
   color: #c8eec5;
 }
+
 .project2 {
   background-image: url("images/test.png");
   color: #001a4f;
 }
+
 .project3 {
   background-image: url("images/test.png");
 
@@ -481,33 +489,36 @@ ol {
   .container {
     flex-direction: column;
   }
+
   .sub-heading {
     display: none;
   }
+
   .mobile {
     display: block;
     padding: 2%;
     width: 100%;
   }
 
-  section{
+  section {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .info, .image{
+  .info,
+  .image {
     width: 100%;
   }
 
-  .image{
+  .image {
     height: 70vh;
   }
 
-  .header-type-container{
+  .header-type-container {
     display: none;
   }
 
-  .mobile-header{
+  .mobile-header {
     display: block;
     padding: 40px;
     font-family: Monospace;
@@ -517,13 +528,13 @@ ol {
     background: olive;
   }
 
-  .desktop-header{
+  .desktop-header {
     display: none;
   }
 
-  .image .top-image-container svg{
+  .image .top-image-container svg {
     padding: 0;
-    width:auto;
+    width: auto;
     max-width: 100%;
   }
 
@@ -532,22 +543,22 @@ ol {
     /* margin: 0px 20px 0px 0px; */
   }
 
-  .swap{
-   flex-direction: column-reverse;
+  .swap {
+    flex-direction: column-reverse;
   }
 
-  .enter-link{
+  .enter-link {
     z-index: 100;
     display: block;
     position: absolute;
     top: auto;
     bottom: 0%;
     left: 0%;
-    transform: translate(0,0);
+    transform: translate(0, 0);
     width: 100%;
   }
-  
-  a .enter-button{
+
+  a .enter-button {
     display: flex;
     background: olive;
     border-radius: 0;
@@ -558,13 +569,13 @@ ol {
     z-index: 100;
     padding: 10px 10px 10px 40px;
   }
-  
-  a .enter-button:hover{
+
+  a .enter-button:hover {
     transition-duration: 500ms;
     background: white;
   }
 
-  .project-text{
+  .project-text {
     display: none;
   }
 
@@ -585,6 +596,7 @@ ol {
     position: absolute;
     display: block;
   }
+
   ul.no-bullets {
     text-align: start;
   }
@@ -608,6 +620,7 @@ ol {
   .col-text {
     position: static;
   }
+
   nav,
   header {
     position: static;
