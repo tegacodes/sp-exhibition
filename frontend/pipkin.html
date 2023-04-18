@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css?v=1" />
+    <title>Solar Protocol</title>
+    <meta
+      name="author"
+      content=" Tega Brain, Alex Nathanson and Benedetta Piantella."
+    />
+
+    <!--Twitter -->
+    <!--sola this is what Facebook and other social websites will draw on -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Solar Protocol" />
+    <meta
+      name="twitter:description"
+      content="A naturally intelligent network programmed by the sun."
+    />
+    <meta name="twitter:image" content="images/full-images/logo.gif" />
+
+    <!-- Open Graph / Facebook -->
+    <!--sola this is what Facebook and other social websites will draw on -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://solarprotocol.net/" />
+    <meta property="og:title" content="Solar Protocol" />
+    <meta
+      property="og:description"
+      content="A naturally intelligent network programmed by the sun."
+    />
+    <meta property="og:image" content="images/full-images/logo.gif" />
+
+    <link rel="icon" href="images/favicon.png" />
+    <style>
+      a:hover {
+        color: Olive;
+        /* color: {{bgColor}}; */
+        text-decoration: none;
+      }
+      .nav-top-right {
+        background-color: olive;
+        /* background-color:  {{bgColor}};  */
+      }
+    </style>
+    <script>
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="nav-top">
+      <div class="flex-items"><a href="index.html">EXHIBITION HOME</a></div>
+      <div class="flex-items">
+        <div class="popup" onclick="myFunction()">
+          ARTIST BIO
+          <span class="popuptext" id="myPopup">
+            Everest Pipkin is a game developer, writer, and artist from central
+            Texas who lives and works on a sheep farm in southern New Mexico.
+            Their work both in the studio and in the garden follows themes of
+            ecology, tool making, and collective care during collapse. When not
+            at the computer in the heat of the day, you can find them in the
+            hills spending time with their neighbors — both human and non-human.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="nav-top-right">
+      <div class="flex-items"><< ESSAY</div>
+      <div class="flex-items">PROJECT >></div>
+    </div>
+    <div class="project-content">
+      <iframe
+        src="http://solarprotocol.net/sunthinking/pipkin/"
+        id="project"
+      ></iframe>
+    </div>
+    <!-- end of container -->
+  </body>
+</html>

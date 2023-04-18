@@ -86,7 +86,7 @@ def render_pages(_local_data, _data, _weather,):
 
     pages = [
         ("index-template.html", "index.html"),
-         ("essay1-template.html", "pasek.html"),
+         ("pasek-template.html", "pasek.html"),
                ]
     
     #get the current time
