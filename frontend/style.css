@@ -112,9 +112,12 @@ nav p {
 }
 
 ul.no-bullets {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
   padding-left: 0.05em;
   text-align: start;
   flex: 1 0 40%;
@@ -124,6 +127,7 @@ nav a {
   color: var(--textcolor);
   text-decoration: none;
 }
+
 nav a:hover {
   text-decoration: none;
 }
@@ -410,6 +414,7 @@ h6 {
 
 h1 {
 }
+
 h1 a {
   color: white;
   text-decoration: none;
@@ -464,10 +469,12 @@ ol {
   background-image: url("images/test.png");
   color: #c8eec5;
 }
+
 .project2 {
   background-image: url("images/test.png");
   color: #001a4f;
 }
+
 .project3 {
   background-image: url("images/test.png");
 
@@ -590,9 +597,11 @@ ol {
   .container {
     flex-direction: column;
   }
+
   .sub-heading {
     display: none;
   }
+
   .mobile {
     display: block;
     padding: 2%;
@@ -695,6 +704,7 @@ ol {
     position: absolute;
     display: block;
   }
+
   ul.no-bullets {
     text-align: start;
   }
@@ -718,6 +728,7 @@ ol {
   .col-text {
     position: static;
   }
+
   nav,
   header {
     position: static;
