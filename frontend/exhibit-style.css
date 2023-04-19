@@ -222,6 +222,14 @@ section {
   /* margin: 0px 20px 0px 0px; */
 }
 
+.col-text-body ul {
+  list-style-type: none;
+}
+
+.col-text-body li {
+  margin: 10px 0;
+}
+
 .image {
   width: 50%;
   background: olive;
@@ -470,9 +478,8 @@ h4 {
 /*Titles in sidebar*/
 /*NEED TO MAKE RESPONSIVE*/
 h5 {
-  font-size: calc(var(--text-size) * 1.2);
-  font-style: oblique;
-  padding: 20px 0px 0px 0px;
+  font-size: calc(var(--text-size) * 1.1);
+  padding: 20px 0px;
 }
 
 /*Right titles in sidebar*/
@@ -492,6 +499,11 @@ hr {
 ol {
   margin: 0;
   margin-top: 10px;
+}
+
+blockquote {
+  font-size: calc(var(--text-size) * 0.9);
+  font-style: oblique;
 }
 
 .project1 {
@@ -603,6 +615,9 @@ figcaption {
   font-size: calc(var(--text-size) * 0.8);
 }
 
+.footnotes ol li {
+  margin-left: 0rem;
+}
 /* Toggle this class - hide and show the popup */
 .popup .show {
   visibility: visible;
@@ -651,6 +666,7 @@ figcaption {
   section {
     display: flex;
     flex-direction: column-reverse;
+    padding-top: 0px;
   }
 
   .info,

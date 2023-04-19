@@ -99,14 +99,16 @@ def render_pages(_local_data, _data, _weather,):
          ("pasek-template.html", "pasek.html"),
          ("parrish-template.html", "parrish.html"),
           ("adam-template.html", "adam.html"),
+                      ("ash-template.html", "ash.html"),
+             ("devalk-template.html", "devalk.html"),
+              ("lenz-template.html", "lenz.html"),
+              ("lieu-template.html", "lieu.html"),
+               ("dick-template.html", "dick.html"),
+                 ("zhang-template.html", "zhang.html"),
+               ]
         #   ("motaghy-template.html", "motaghy.html"),
         #    ("wamburu-template.html", "wamburu.html"),
-        #     ("ash-template.html", "ash.html"),
-        #      ("devalk-template.html", "devalk.html"),
-        #       ("lenz-template.html", "lenz.html"),
-        #       ("lieu-template.html", "lieu.html"),
-        #        ("dick-template.html", "dick.html"),
-               ]
+
     
     #get the current time
     time = datetime.datetime.now()
