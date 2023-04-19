@@ -186,6 +186,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
 }
 
 .info h1 {
@@ -219,6 +220,10 @@ section {
   margin-bottom: 20vh;
 }
 
+.project-text{
+  margin-bottom: 2rem;
+}
+
 .col-text-intro {
   margin-top: 46vh;
   line-height: var(--line-height);
@@ -230,6 +235,11 @@ section {
   font-size: 1rem;
   line-height: 1.5em;
   /* margin: 0px 20px 0px 0px; */
+}
+
+.col-text-body .bio-text{
+  font-size: calc(var(--text-size) * 0.7);
+  /* text-align: justify; */
 }
 
 .col-text-body ul {
@@ -263,7 +273,7 @@ section {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-height: 100vh;
   /* background: yellow; */
   display: flex;
@@ -344,6 +354,9 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-style: italic;
+  color: white;
 }
 
 a .enter-button {
@@ -360,6 +373,7 @@ a .enter-button {
 a .enter-button:hover {
   transition-duration: 500ms;
   background: white;
+  color: olive;
 }
 /* 
 .footer-spacer {
@@ -399,9 +413,9 @@ text a {
 
 .col-text-body h3 {
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   text-decoration: none;
-  font-size: calc(var(--text-size) * 1.5);
+  /* font-size: calc(var(--text-size) * 1.5); */
 }
 .col-text-body li {
   font-size: calc(var(--text-size) * 0.9);
@@ -413,6 +427,10 @@ text a {
 .themes {
   font-style: oblique;
   font-size: calc(var(--text-size) * 0.8);
+}
+
+.themes a{
+  text-decoration: none;
 }
 
 .col-text-body h3,
@@ -473,7 +491,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(var(--text-size) * 1.6);
+  font-size: calc(var(--text-size) * 2);
   /* padding: 20px 0px 10px 0px; */
 }
 
@@ -652,6 +670,8 @@ figcaption {
   font-size: calc(var(--text-size) * 0.8);
 }
 
+
+
 .fullwidth {
   position: absolute;
   top: 45%;
@@ -685,7 +705,14 @@ figcaption {
   }
 
   .image {
-    height: 70vh;
+    /* height: 70vh; */
+    position: relative;
+    min-height: auto;
+  }
+
+  .image .image-container{
+    height: 100%;
+    
   }
 
   .header-type-container {
