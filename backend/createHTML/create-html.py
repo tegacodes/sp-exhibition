@@ -105,9 +105,10 @@ def render_pages(_local_data, _data, _weather,):
               ("lieu-template.html", "lieu.html"),
                ("dick-template.html", "dick.html"),
                  ("zhang-template.html", "zhang.html"),
+                           ("motaghy-template.html", "motaghy.html"),
+           ("wamburu-template.html", "wamburu.html"),
                ]
-        #   ("motaghy-template.html", "motaghy.html"),
-        #    ("wamburu-template.html", "wamburu.html"),
+
 
     
     #get the current time
