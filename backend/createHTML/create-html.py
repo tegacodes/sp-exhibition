@@ -102,7 +102,7 @@ def render_pages(_local_data, _data, _weather,):
                       ("ash-template.html", "ash.html"),
              ("devalk-template.html", "devalk.html"),
               ("lenz-template.html", "lenz.html"),
-              ("lieu-template.html", "lieu.html"),
+              ("liu-template.html", "liu.html"),
                ("dick-template.html", "dick.html"),
                  ("zhang-template.html", "zhang.html"),
                            ("motaghy-template.html", "motaghy.html"),
