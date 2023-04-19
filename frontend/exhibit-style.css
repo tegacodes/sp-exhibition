@@ -357,6 +357,7 @@ section {
   text-decoration: none;
   font-style: italic;
   color: white;
+  
 }
 
 a .enter-button {
@@ -368,6 +369,7 @@ a .enter-button {
   justify-content: center;
   align-items: center;
   z-index: 100;
+  /* border: .5px solid white; */
 }
 
 a .enter-button:hover {
