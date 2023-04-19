@@ -186,6 +186,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
 }
 
 .info h1 {
@@ -219,6 +220,10 @@ section {
   margin-bottom: 20vh;
 }
 
+.project-text{
+  margin-bottom: 2rem;
+}
+
 .col-text-intro {
   margin-top: 46vh;
   line-height: var(--line-height);
@@ -230,6 +235,11 @@ section {
   font-size: 1rem;
   line-height: 1.5em;
   /* margin: 0px 20px 0px 0px; */
+}
+
+.col-text-body .bio-text{
+  font-size: calc(var(--text-size) * 0.7);
+  /* text-align: justify; */
 }
 
 .col-text-body ul {
@@ -481,7 +491,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(var(--text-size) * 1.6);
+  font-size: calc(var(--text-size) * 2);
   /* padding: 20px 0px 10px 0px; */
 }
 
@@ -659,6 +669,8 @@ figcaption {
   font-style: italic;
   font-size: calc(var(--text-size) * 0.8);
 }
+
+
 
 .fullwidth {
   position: absolute;
