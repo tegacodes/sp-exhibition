@@ -52,11 +52,21 @@ header {
 
 .sub-heading {
   height: 100%;
+  display: flex;
+  align-content: space-between;
   text-align: right;
   z-index: 999;
   left: 0px;
-  font-size: calc(var(--text-size) * 1.2);
+  /* font-size: calc(var(--text-size) * 1.2); */
   align-items: center;
+}
+
+.sub-heading .p {
+  font-size: 3vh;
+}
+
+.sub-heading .h1 a {
+  font-size: 3.5vh;
 }
 
 .h1 a {
