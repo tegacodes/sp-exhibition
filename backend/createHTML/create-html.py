@@ -109,7 +109,7 @@ def render_pages(_local_data, _data, _weather,):
                            ("motaghy-kumar.html", "kumar.html"),
                            ("motaghy-dinesh.html", "dinesh.html"),
                            ("motaghy-smith.html", "smith.html"),
-                           ("motaghy-zhang.html", "zhang.html"),
+                           ("motaghy-zhang.html", "a-zhang.html"),
                             ("motaghy-template.html", "motaghy.html"),
            ("wamburu-template.html", "wamburu.html"),
                ]

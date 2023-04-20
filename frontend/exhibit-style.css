@@ -220,7 +220,7 @@ section {
   margin-bottom: 20vh;
 }
 
-.project-text{
+.project-text {
   margin-bottom: 2rem;
 }
 
@@ -237,7 +237,7 @@ section {
   /* margin: 0px 20px 0px 0px; */
 }
 
-.col-text-body .bio-text{
+.col-text-body .bio-text {
   font-size: calc(var(--text-size) * 0.7);
   /* text-align: justify; */
 }
@@ -357,7 +357,6 @@ section {
   text-decoration: none;
   font-style: italic;
   color: white;
-  
 }
 
 a .enter-button {
@@ -431,7 +430,7 @@ text a {
   font-size: calc(var(--text-size) * 0.8);
 }
 
-.themes a{
+.themes a {
   text-decoration: none;
 }
 
@@ -672,13 +671,11 @@ figcaption {
   font-size: calc(var(--text-size) * 0.8);
 }
 
-
-
-.fullwidth {
+/* .fullwidth {
   position: absolute;
   top: 45%;
   width: 100%;
-}
+} */
 
 @media only screen and (max-width: 750px) {
   .container {
@@ -712,9 +709,8 @@ figcaption {
     min-height: auto;
   }
 
-  .image .image-container{
+  .image .image-container {
     height: 100%;
-    
   }
 
   .header-type-container {
