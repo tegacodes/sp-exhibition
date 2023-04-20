@@ -843,5 +843,6 @@ figcaption {
   main {
     margin-left: 0px;
     width: 100%;
+    overflow-x: hidden;
   }
 }
