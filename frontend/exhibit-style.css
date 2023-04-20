@@ -194,6 +194,10 @@ section {
   font-size: calc(var(--text-size) * 2);
 }
 
+.ascii{
+  overflow-x: none;
+}
+
 .header-type-container {
   position: absolute;
   font-family: Monospace;
@@ -705,8 +709,12 @@ figcaption {
   }
 
   .image {
-    /* height: 70vh; */
+    height: 70vh;
     position: relative;
+    min-height: auto;
+  }
+
+  .info-body{
     min-height: auto;
   }
 
@@ -779,6 +787,12 @@ figcaption {
     display: none;
   }
 
+  .body-type-container {
+    font-size: 1.5vw;
+    padding-bottom: 5vh;
+    font-weight: bold;
+  }
+
   header {
     width: 100%;
     font-size: 3em;
@@ -828,5 +842,6 @@ figcaption {
 
   main {
     margin-left: 0px;
+    width: 100%;
   }
 }
