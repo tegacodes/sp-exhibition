@@ -25,7 +25,7 @@ if os.environ.get("ENV") == "DEV" or 'DEV' in sys.argv:
     rootPath = "../../"
     chargeControllerDataPath = rootPath + 'dev-data/'
     chargecontrollerdata = "testtracerdata"
-    templatePath = "templates/"
+    templatePath = "templates-sunthinking/"
     outputPath = rootPath + "frontend/"
     deviceList = rootPath + "/dev-data/deviceList.json"
     imgDst = rootPath + "frontend/images/servers/serverprofile.png"
@@ -35,7 +35,7 @@ else:
     rootPath = "/home/pi/"
     chargeControllerDataPath = rootPath + "solar-protocol/charge-controller/data/"
     chargecontrollerdata = "tracerData"+str(datetime.date.today()) 
-    templatePath = path + "/createHTML/templates/"
+    templatePath = path + "/createHTML/templates-sunthinking/"
     outputPath = rootPath + "solar-protocol/frontend/" 
     deviceList = path + "/data/deviceList.json"
     imgDst = "/home/pi/local/www/serverprofile.gif"
@@ -159,7 +159,7 @@ def render_pages(_local_data, _data, _weather,):
         print("rendering", template_filename)
         #print("battery", _data["battery percentage"]*100)
         #this line was changed last, it was: "/templates/"
-        template = Environment(loader=FileSystemLoader(path + "/createHTML/templates/")).from_string(
+        template = Environment(loader=FileSystemLoader(path + "/createHTML/templates-sunthinking/")).from_string(
             template_file
         )
         
