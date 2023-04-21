@@ -35,10 +35,19 @@
     <style>
 
       a:hover { color: {{bgColor}};  text-decoration: none;}
-      .image {background: {{bgColor}};}
+      .image{background: {{bgColor}};}
+      
       a .enter-button {background: {{bgColor}};}
       .footer {background: {{bgColor}};}
-      .mobile-header {background: {{bgColor}};}
+      .mobile-header {
+
+background-image: linear-gradient(
+      to top,
+      {{bgColor}},
+      {{bgColor}},
+      {{bgColor}},
+      white
+    );}
     </style>
   </head>
   <body>
