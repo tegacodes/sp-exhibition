@@ -713,7 +713,7 @@ figcaption {
   }
 
   .image {
-    height: 70vh;
+    height: 50vh;
     position: relative;
     min-height: auto;
   }
@@ -758,6 +758,7 @@ figcaption {
 
   .mobile-header .top-image-container svg {
     /* padding: 0; */
+    display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -774,14 +775,15 @@ figcaption {
   }
 
   .enter-link {
-    z-index: 100;
+    /* z-index: 100;
     display: block;
     position: absolute;
     top: auto;
     bottom: 0%;
     left: 0%;
     transform: translate(0, 0);
-    width: 100%;
+    width: 100%; */
+    display: none;
   }
 
   a .enter-button {
