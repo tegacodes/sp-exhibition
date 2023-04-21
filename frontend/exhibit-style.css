@@ -470,6 +470,10 @@ a {
   color: black;
 }
 
+p a, li a {
+  word-wrap: break-word;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -701,7 +705,7 @@ figcaption {
 
   .mobile {
     display: block;
-    padding: 2%;
+    /* padding: 2%; */
     width: 100%;
   }
 
@@ -718,6 +722,10 @@ figcaption {
   .info,
   .image {
     width: 100%;
+  }
+
+  .info {
+    padding: 30px;
   }
 
   .image {
@@ -837,7 +845,7 @@ figcaption {
 
   header {
     width: 100%;
-    font-size: 3em;
+    /* font-size: 3em; */
     writing-mode: lr;
     transform: rotate(0deg);
     position: absolute;
@@ -893,6 +901,20 @@ figcaption {
   nav,
   header {
     position: static;
+  }
+
+
+  header .h1, nav {
+    padding: 0px 30px;
+  }
+
+  header {
+    padding-top: 30px;
+    background-image: none !important;
+  }
+  nav {
+    font-size: 16px;
+    padding-bottom: 30px;
   }
 
   main {
