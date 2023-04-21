@@ -30,10 +30,10 @@
 <text transform="translate(971.557 669.761) rotate(39.9495)" fill="black" xml:space="preserve" style="white-space: pre" font-family="Courier" font-size="16" letter-spacing="0em"><tspan x="6.24989" y="21.7617">Roopa Vasudevan</tspan></text>
 <text transform="translate(1056.1 791.706) rotate(44.3911)" fill="black" xml:space="preserve" style="white-space: pre" font-family="Courier" font-size="16" letter-spacing="0em"><tspan x="9.16364" y="21.7617">Denzel Wamburu</tspan></text>
 <text transform="translate(940.551 710.417) rotate(48.1539)" fill="black" xml:space="preserve" style="white-space: pre" font-family="Courier" font-size="16" letter-spacing="0em"><tspan x="18.0127" y="21.7617">Alice Yuan Zhang</tspan></text>
-<path d="M266 27.5L679 461.5" stroke="black" stroke-dasharray="2 2"/>
-<path d="M1084.5 20.5L679 461.5" stroke="black" stroke-dasharray="2 2"/>
-<path d="M192.5 111L679 461.5" stroke="black" stroke-dasharray="2 2"/>
-<path d="M83 524L679 461.5" stroke="black" stroke-dasharray="2 2"/>
-<path d="M131 704.5L679 461.5" stroke="black" stroke-dasharray="2 2"/>
-<path d="M246.5 876.5L679 461.5" stroke="black" stroke-dasharray="2 2"/>
+<path d="M266 27.5L679 461.5" stroke="white" stroke-dasharray="2 2"/>
+<path d="M1084.5 20.5L679 461.5" stroke="white" stroke-dasharray="2 2"/>
+<path d="M192.5 111L679 461.5" stroke="white" stroke-dasharray="2 2"/>
+<path d="M83 524L679 461.5" stroke="white" stroke-dasharray="2 2"/>
+<path d="M131 704.5L679 461.5" stroke="white" stroke-dasharray="2 2"/>
+<path d="M246.5 876.5L679 461.5" stroke="white" stroke-dasharray="2 2"/>
 </svg>
